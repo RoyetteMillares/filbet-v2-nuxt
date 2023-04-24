@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  filbet-proxy-service:
+    container_name: filbet-proxy-service
+    build:
+      dockerfile: filbet-nginx.dockerfile
+      context: .
+    ports:
+      - 18001:80
+    restart: always
+    logging:
+      options:
+        max-size: 200k
+        max-file: 10

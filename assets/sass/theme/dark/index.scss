@@ -1,0 +1,198 @@
+html[class*="dark"] {
+  --v-bg-page-bg-primary: #1e2c37;
+  --v-default-bg: #13212d;
+  --v-m: #1e2c37; // body背景色
+  --v-footer-bg: #0d1c29; // 页脚背景色
+  --v-footer-border: #263642; // 頁腳分隔線
+  --v-footer-title-color: #ffffff; // 頁腳標題文字
+  --v-footer-color: #b3bad1; // 頁腳文字
+  --v-navbar-bg: #16212c; // navbar 背景色
+  --v-nav-expand-bg: #344452; // 展开付按钮背景色
+  --v-navbar-active-bg: linear-gradient(180deg, #1999ee -9.78%, #115bca 26.02%, #0b3aa8 111.96%);
+  --v-navbar-active-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --v-navbar-color: #b3bad1;
+  --v-navbar-active-color: #fff;
+  --v-navbar-extra-b: #344452;
+  --v-announcement-bg: #13212d; // 公告底色
+  --v-announcement-icon-bg: #344452; // 公告icon底色
+  --v-announcement-text-bg: #b3bad1; // 公告icon底色
+  --v-search-border: #5b6f84;
+  --v-search-bg: #13212d;
+  --404-bg: #1e2c37;
+  --404-title-color: #1999ee;
+  --v-search-placeholder-text: #596670;
+  --v-search-inner-text: #fff;
+  --v-search-content-bg: #13212d; // 搜索下拉栏背景
+  --v-search-tips-text-color: #b2b9d0; // 提示字体颜色
+  --v-components-loading-mask-bg: #000000bd;
+  --v-page-layout-bg: #212c36;
+  --v-search-bg-hover: #263642; // search hover
+  --v-skeleton-color: #303030;
+  --v-game-item-name: #fff;
+  --v-class-inner-bg: #13212d; // 游戏分类背景色
+  --v-class-game-color: #b3bad1;
+  --v-class-game-active-color: #fff;
+  --v-rank-table-bg: #263642; // 收益排行表格背景色
+  --v-tab-bar-bg: #13212d;
+  --v-tab-bar-text-color: #b3bad1;
+  --v-tab-bar-text-active-color: #fff;
+
+  // HelpCenter
+  --v-help-center-color: #ffffff;
+  --v-help-center-sub-title-color: #b3bad1;
+  --v-help-center-banner-top-color: #0e6fb7;
+  --v-help-center-banner-bottom-color: #34a9ff;
+  --v-help-center-button-top-bg: #324353;
+  --v-help-center-button-bottom-bg: #233546;
+  --v-help-center-button-top-border: #475a6c;
+  --v-help-center-button-bottom-border: #0e1c28;
+  --v-help-center-button-active-top-bg: #44b4ff;
+  --v-help-center-button-active-bottom-bg: #0b3aa8;
+  --v-help-center-button-active-top-border: #96cdff;
+  --v-help-center-button-active-bottom-border: #0052ff00;
+  --v-help-center-button-shadow: rgba(8, 20, 30, 0.3);
+  --v-help-center-accordion-bg: #263642;
+  --v-help-center-accordion-border: #314453;
+  --v-help-center-arrow-bg: #1999ee;
+
+  // Jackpot
+  --v-jackpot-box-width: 130px;
+  --v-jackpot-box-height-color: #545761;
+  --v-jackpot-box-border-color: #545761;
+  --v-jackpot-text-border-blue: -webkit-linear-gradient(-90deg, #76c1fb 0%, #1161cd 85%);
+  --v-jackpot-text-bg-blue: -webkit-linear-gradient(-90deg, #1694eb 0%, #1161cd 100%);
+  --v-jackpot-text-border-red: -webkit-linear-gradient(-90deg, #ffb5a0 0%, #ee2e30 85%);
+  --v-jackpot-text-bg-red: -webkit-linear-gradient(-90deg, #fd7342 0%, #ee2e30 100%);
+
+  --v-dialog-bg: #1e2c37;
+  --v-dialog-title-color: #fff; // 弹框 title
+  --v-header-regiter-bg: linear-gradient(180deg, #1999ee -9.78%, #115bca 26.02%, #0b3aa8 111.96%);
+  --v-header-register-color: #fff;
+  --v-form-container-bg: #13212d;
+  --v-form-label-color: #fff;
+  --v-form-inner-placeholder-color: #596670;
+  --v-form-inner-color: #b3bad1;
+  --v-form-line-bg: #314453;
+  --v-header-balance-bg: #13212d;
+  --v-header-wallet-bg: linear-gradient(180deg, #1999ee -9.78%, #115bca 26.02%, #0b3aa8 111.96%);
+  --v-header-color: #fff;
+  // 登录注册
+  --v-form-get-color: #06d094;
+  --v-form-normal-color: #b3bad1;
+  --v-bold-text-color: #fff;
+  --v-form-forbidden-text-color: #666;
+
+  // affiliate
+  --v-bg-affiliate-box-primary-bg: #0b1823;
+  --v-bg-affiliate-box-secondary-bg: #344452;
+  --v-bg-affiliate-primary: #1e2c37;
+  --v-bg-affiliate-secondary: #263642;
+// affiliate commission
+  --v-color-yellow:#F8CE6C;
+
+  // slots game
+  --v-filter-text-color: #fff;
+  --v-filter-select-bg: #13212d;
+  --v-layout-resuable-bg: #212c36;
+  --v-load-more-color: #b3bad1;
+  --v-display-color: #b3bad1;
+  --v-title-text-color: #fff;
+
+ // promotions
+  --v-promotions-text-color:#fff;
+  --v-promotions-text-bg:#13212D;
+  --v-promotion-bg-color:#212C36;
+  --v-promotions-info-container-bg:#16212C;
+  --v-promotions-time-color:#B3BAD1;
+  //blog
+  --v-blog-container-bg: #263642;
+  --v-blog-content-bg: #13212D;
+  --v-blog-active-content-bg: linear-gradient(180deg, #1999ee -9.78%, #115bca 26.02%, #0b3aa8 111.96%);
+  --v-blog-content-date: #B3BAD1;
+
+  // 登录注册
+  --v-form-get-color: #06d094;
+  --v-form-normal-color: #b3bad1;
+  --v-bold-text-color: #fff;
+  --v-form-forbidden-text-color: #666;
+
+  //VIP DASHBOARD
+  --v-vip-dashboard: #263642;
+  //record
+  --v-deposit-record-list-bg: #263642;
+  --v-deposit-record-list-text: #fff;
+  --v-deposit-record-bottom: #2f3f4b;
+
+  // slots game
+  --v-filter-text-color: #fff;
+  --v-filter-select-bg: #13212d;
+  --v-layout-resuable-bg: #212c36;
+  --v-display-color: #b3bad1;
+  --v-load-more-color: #b3bad1;
+  // my account 
+  --v-my-wallet-container-bg: #263642;
+  --v-my-wallet-container-color: #fff;
+  --v-my-wallet-assets-bg: #13212d;
+  --v-my-wallet-assets-label-color: #b3bad1;
+  --v-my-wallet-inquire-bg: linear-gradient(180deg, #324353 0%, #233546 100%);
+  --v-label: #b3bad1;
+  --v-my-account-container:#13212d;
+  --v-my-account-color:#fff;
+  --v-my-account-card-bg:linear-gradient(180deg, #324353 0%, #233546 100%);
+  --v-my-account-card-active-bg:#fff;
+  --v-my-account-card-active-color:#115BCA;
+
+  // message
+  --v-information-list-bg:#13212D;
+  --v-information-list-active-bg:linear-gradient(180deg, #324353 0%, #233546 100%);
+  --information-list-color:linear-gradient(180deg, #324353 0%, #233546 100%);;
+
+  /* element components  */
+  .el-message-box {
+    --el-bg-color: #263642;
+    --el-border-color-lighter: #263642;
+    --el-messagebox-title-color:#fff;
+    .el-message-box__btns{
+      .el-button{
+        background: #212C36;
+        border: none;
+      }
+    }
+    //--el-color-danger:#f00;
+  }
+  .el-message-box__content {
+    --el-messagebox-content-color: #fff;
+  }
+  .el-notification {
+    --el-bg-color-overlay: #263642;
+    --el-notification-border-color: #263642;
+    --el-notification-title-color: #fff;
+    --el-notification-content-color: #fff;
+    --el-notification-close-color: #fff;
+  }
+  --el-bg-color-overlay: #263642;
+  --el-border-color-light: #263642;
+  --el-fill-color-light: #13212d;
+  --el-text-color-regular: #fff;
+  // date
+  --v-date-bg: #13212d;
+
+  // vip
+  --v-vip-text: #fff;
+  --v-vip-rules-text: #B3BAD1;
+  --v-vip-button-bottom-bg: #0B3AA8;
+  --v-vip-button-top-bg: #1999EE;
+  --v-vip-button-top-border: #85C5FF;
+  --v-vip-button-bottom-border: #0052FF00;
+  --v-vip-button-shadow: rgba(0, 0, 0, 0.25);
+  --v-vip-area-bg: #363D44;
+  --v-vip-title-text: #6EA5FF;
+  --v-vip-indicators-bg: #000000;
+  --v-vip-progress-bg: #354559;
+  --v-vip-reward-text: #B8D0D8;
+  --v-vip-received-text: #06D094;
+  --v-vip-expired-text: #CD4352;
+  --v-vip-label: #6EA5FF;
+  --v-vip-gift-card: #13212D;
+  --v-vip-gift: #061B20;
+}

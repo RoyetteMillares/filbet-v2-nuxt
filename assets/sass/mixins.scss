@@ -1,0 +1,13 @@
+@mixin special-border($border-image, $border-width) {
+  background-clip: padding-box;
+
+  border: $border-width solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  border-image-source: $border-image;
+}
+
+@mixin background-border($background, $border-color, $border-width) {
+  background: $background padding-box, $border-color border-box;
+  border: $border-width solid transparent;
+}

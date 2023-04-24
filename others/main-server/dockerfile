@@ -1,0 +1,10 @@
+FROM node:19
+USER root
+ARG WORKING_DIR=/workspace
+WORKDIR ${WORKING_DIR}
+RUN npm -g install pnpm
+COPY . ${WORKING_DIR}
+RUN cd ${WORKING_DIR}
+RUN pnpm install
+RUN pnpm nuxt:build
+

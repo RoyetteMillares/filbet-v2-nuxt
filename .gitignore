@@ -1,0 +1,23 @@
+*.log
+nuxt.d.ts
+
+*.log*
+.nitro
+.cache
+
+
+
+# private config
+# .env
+.env.docker
+# deps
+node_modules
+
+# build or generate
+.nuxt
+dist
+.output
+
+# IDE
+.idea
+.vercel

@@ -1,0 +1,23 @@
+{
+  "editor.tabSize": 2,
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "css",
+    "vue",
+    "html"
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -1,0 +1,26 @@
+version: "3.3"
+services:
+  filbet-ssr:
+    container_name: filbet-ssr
+    working_dir: /workspace
+    image: filbet-ssr
+    build:
+      context: ${ContextPath}
+      dockerfile: ${MainServerPath}/dockerfile
+    restart: unless-stopped
+    env_file:
+      - ${EnvPath}
+    tty: true
+    stdin_open: true
+    entrypoint: pnpm
+    command:
+      - nuxt:start
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - 3000:3000
+    volumes:
+      - filbet-ssr:/workspace
+
+volumes:
+  filbet-ssr:

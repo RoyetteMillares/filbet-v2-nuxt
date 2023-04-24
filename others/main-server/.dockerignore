@@ -1,0 +1,20 @@
+node_modules
+pnpm-lock.yaml
+.env.*
+
+*.log
+nuxt.d.ts
+
+*.log*
+.nitro
+.cache
+# build or generate
+.nuxt
+dist
+.output
+
+# IDE
+.idea
+.vercel
+.gitignore
+others

@@ -1,0 +1,59 @@
+@mixin formContainer {
+    :deep(.el-form-item) {
+      &.prefix-input{
+        .el-input__wrapper{
+          padding-left: 1px;
+        }
+
+      }
+      .area-code{
+        .el-input__wrapper{
+          padding-left: 11px;
+          box-shadow: none !important;
+          .el-input__validateIcon{display: none}
+        }
+      }
+      display: block;
+      .el-form-item__label {
+        display: block;
+        text-align: left;
+        font-weight: 600;
+        font-size: 14px;
+        color: var(--v-form-label-color);
+        margin-bottom: 9px;
+      }
+      .el-form-item__content{
+        .el-input__wrapper{
+          background-color: var(--v-form-container-bg);
+          box-shadow: 0 0  0 1px rgba(0, 0, 0, 0.08) inset;
+         .el-input__inner{
+           height: 40px;
+           font-weight: 400;
+           font-size: 14px;
+           color: var(--v-form-inner-color);
+           &::placeholder{
+             color: var(--v-form-inner-placeholder-color);
+           }
+         }
+          &.is-focus{
+            box-shadow: 0 0  0 1px #115BCA inset;
+          }
+        }
+
+      }
+      &.is-error{
+        .el-input__wrapper{
+          box-shadow: 0 0  0 1px #f56c6c inset;
+        }
+      }
+      .el-input-group__append{
+        box-shadow: none;
+      }
+    }
+  .is-have{
+    color: var(--v-form-normal-color);
+  }
+  .is-active {
+    color: var(--v-bold-text-color);
+  }
+}
