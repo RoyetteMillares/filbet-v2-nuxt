@@ -1,49 +1,49 @@
-# Filbet ( `RWD` & `SSR` )
-> 基於 [Nuxt 3 Awesome Starter](https://github.com/viandwi24/nuxt3-awesome-starter) 建立的腳手架
+Filbet (RWD & SSR)
+A scaffold based on Nuxt 3 Awesome Starter
 
-## 開發環境
-- Docker
-- Docker Compose
-- Node == 19.1
+Development Environment
+Docker
+Docker Compose
+Node == 19.1
 
-## 生產環境
-- 同「開發環境」
+Production Environment
+Same as "Development Environment"
 
-## 常用命令
+## Common Commands
 ```sh
-# 安裝
+# Install dependencies
 pnpm i
-# 開發前預先建置
+# Pre-build before development
 npx nuxi prepare
-# 開發
+# Start development
 pnpm dev
-# 生產啟動
+# Start production
 pnpm start
-# 反向代理日誌查詢
+# View reverse proxy logs
 pnpm proxy:log
-# 生成 png/svg keys
+# Generate PNG/SVG keys
 pnpm generate:assetkeys
 
-# 備注：
-# 開發和生產的啟動皆會重新啟動「反向代理」程序
+# Note:
+# Starting in both development and production will restart the "reverse proxy" process.
 ```
 
-## 環境變數
+## Environment Variables
 ```env
-# 反向代理地址
+# Reverse proxy address
 PROXY_SERVER_ADDRESS=http://localhost:18001
 ```
 
-## 反向代理設定
+## Reverse Proxy Configuration
 ```nginx
 server {
     listen 80;
     listen [::]:80;
 
     location / {
-        # 反向代理地址
+        # Reverse proxy address
         proxy_pass https://test-mobile.filbet.network;
-        # 其他客製化請求表頭
+        # Custom request headers
         proxy_ssl_server_name on;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_pass_request_headers on;
@@ -61,7 +61,7 @@ services:
       dockerfile: filbet-nginx.dockerfile
       context: .
     ports:
-      # 埠號銜接
+      # Port mapping
       - 18001:80
     restart: always
     logging:
@@ -70,26 +70,26 @@ services:
         max-file: 10
 
 ```
-## 路由 - utils/routes.ts
-- 路由名稱列在 types/global.d.ts
-- 路由配置列在 utils/routes.ts
-- layout 默認為 layouts/default.ts
-- vue-router 型別覆寫（override）寫在 typing.d.ts
+## Routes - utils/routes.ts
+- Route names are listed in types/global.d.ts
+- Route configurations are listed in utils/routes.ts
+- The default layout is layouts/default.ts
+- Vue Router type overrides are written in typing.d.ts
 
-## 狀態管理 - stores, types/stores.ts
-- 狀態都放在 stores 底下
-- 狀態型別都放在 types/stores.ts 用 namespace 做區分
+## State Management - stores, types/stores.ts
+- All states are stored under the stores directory.
+- State types are stored in types/stores.ts, using namespaces for differentiation.
 
-## 組件 - components, views
-- 組件的設計
-  - 獨立無依賴組件請放在 components 底下，可以另外用 page 的範圍來區分
-  - 有依賴的組件請放在 views 底下
+## Components - components, views
+- Component Design:
+  Independent, dependency-free components should be placed under the components directory and can be organized by page scope.
+Components with dependencies should be placed under the views directory.
 
-## 開發注意事項
-- 客戶端才能獲取的資料請用 onMounted 包覆
-- 代傳參數請保持在一層，只有父子傳遞，不要隔代傳遞
+## Development Notes
+Data that can only be fetched on the client should be wrapped with onMounted.
+When passing parameters, maintain a single layer of communication—only parent-child interactions. Avoid skipping generations.
 
 
-## 相關鏈結
+## Relevant Links
 -  [Nuxt 3](https://nuxt.com/docs)
 -  [Nuxt 3 Awesome Starter](https://github.com/viandwi24/nuxt3-awesome-starter)
